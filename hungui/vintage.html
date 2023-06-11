@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hún櫃 </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo1.png"  type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* 允許內容換行 */
+      
+    }
+    
+    aside {
+      flex: 0 0 20%; /* 空間比例 0:不會伸縮, 0:不會壓縮, 20%:佔據容器的20%寬度 */
+      background-color: rgb(251, 199, 199);
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    a:link{
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:visited {
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:hover {
+      text-decoration:none;
+      color:white;
+    }
+    a:active {
+      text-decoration:none;
+      color:#fafafa;
+    }
+
+    aside ul {
+      
+      list-style-type: none;
+      padding: 0;
+      
+    }
+    
+    aside ul li {
+      margin-bottom: 60px;
+      
+    }
+    
+    main {
+      flex: 0 0 70%; /* 佔據容器的60%寬度 */
+      padding: 20px;
+      background-color: #ffffff;
+      position: relative;
+      height: 1700px;
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; */
+    }
+    
+    .grid-background {
+     margin-top: 150px;
+      background-image: linear-gradient(45deg, #bbffe1 25%, #fff 25%, #fff 75%, #bbffe1 75%, #bbffe1);
+      background-size: 20px 20px;
+      /* opacity: 0.3; */
+      position: relative;
+      padding: 10px;
+      border: 10px solid white;
+    }
+    
+    .paper-doll {
+      display: flex;
+      flex-direction: column; /* 列排列 */
+    }
+    
+    .paper-doll img {
+      width: 30%;
+      height: auto;
+    }
+    
+    .wardrobe {
+      width: 30vw;
+      height: 50vh;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 三列等分 */
+      grid-gap: 30px; /* 图片之间的间距 */
+    }
+    
+    .wardrobe img {
+      width: 100%;
+      height: 60%;
+      cursor: pointer;
+      border: 5px solid saddlebrown;
+    }
+    
+    footer {
+      background-color: #005f41;
+      color: #fff;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      
+      text-align: center;
+      
+    }
+
+    .section-1{
+      
+      background-color: #db3939;
+      color: #d64b4b;
+      height: 7px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 100px;
+      position: relative;
+      
+
+    }
+
+    .section-2{
+        background-color: aliceblue;
+        position: relative;
+        margin: 10px;
+    }
+
+    .section-4{
+      
+      border: 5px solid rgb(85, 41, 11);
+        color: #fff;
+        background-color: rgb(165, 91, 42);
+        margin: 10px;
+        font-size: 30PX;
+      overflow: hidden; /* 清除浮动 */
+      border-radius: 10px; /* 圆角半径 */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Noto Serif TC', serif;
+        
+    }
+    .section-3{
+        color: #fff;
+        background-color: rgb(165, 91, 42);
+        
+        display: flex;
+        
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Noto Serif TC', serif;
+        
+    }
+
+    
+    .reset{
+      font-size: 20px;
+    }
+    .reset a:link{
+      color: white;
+      background-color: rgb(85, 41, 11);
+      border: 3px solid rgb(85, 41, 11);
+    }
+    .reset a:visited{
+      color: white;
+      border: 3px solid rgb(85, 41, 11);
+      background-color: rgb(85, 41, 11);
+    }
+    .reset a:hover {
+      text-decoration:none;
+      color:rgb(85, 41, 11);
+      border: 3px solid rgb(255, 255, 255);
+      background-color: rgb(255, 255, 255);
+    }
+    .reset a:active {
+      text-decoration:none;
+      color:rgb(85, 41, 11);
+      border: 3px solid rgb(255, 255, 255);
+      background-color: rgb(255, 255, 255);
+    }
+
+    .intro-box {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+      overflow: hidden; /* 清除浮动 */
+      border-radius: 10px; /* 圆角半径 */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+
+    }
+
+    .intro-image {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .intro-image img {
+      width: 200px; /* 根据需要调整图片的宽度 */
+      height: auto;
+    }
+
+    .intro-content {
+      overflow: hidden; /* 清除浮动 */
+    }
+
+    .intro-content h2 {
+      color: #db3939;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .intro-content p {
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration:none;
+    }
+  </style>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var wardrobeImages = document.querySelectorAll('.wardrobe img');
+      var mainImage = document.querySelector('.paper-doll img');
+
+      wardrobeImages.forEach(function(image) {
+        image.addEventListener('click', function() {
+          mainImage.src = image.src;
+        });
+      });
+    });
+
+    
+  </script> -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var wardrobeImages = document.querySelectorAll('.wardrobe img');
+    var image1 = document.querySelector('.paper-doll img:nth-child(1)');
+    var image2 = document.querySelector('.paper-doll img:nth-child(2)');
+    var image3 = document.querySelector('.paper-doll img:nth-child(3)');
+    var image4 = document.querySelector('.paper-doll img:nth-child(4)');
+
+    wardrobeImages.forEach(function(image) {
+      image.addEventListener('click', function() {
+        var wardrobeIndex = image.getAttribute('data-wardrobe-index'); // 获取衣橱图像的索引值
+        var wardrobeSrc = image.getAttribute('src'); // 获取衣橱图像的src属性
+
+        // 根据索引值更改相应的image元素的src属性
+        if (wardrobeIndex === '1') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '2') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '3') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '4') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '5') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '6') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '7') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '8') {
+          image3.src = wardrobeSrc;
+        } else if (wardrobeIndex === '9') {
+          image3.src = wardrobeSrc;
+        } else if (wardrobeIndex === '10') {
+          image3.src = wardrobeSrc;
+        } else if (wardrobeIndex === '11') {
+          image4.src = wardrobeSrc;
+        } else if (wardrobeIndex === '12') {
+          image4.src = wardrobeSrc;
+        } else if (wardrobeIndex === '13') {
+          image4.src = wardrobeSrc;
+        }
+      });
+    });
+  });
+
+
+</script>
+
+</head>
+<body>
+    
+
+  <div class="container">
+    <aside>
+      <img src="LOGO.png" width="95%">
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="vintage.html">古著風</a></li>
+        <li><a href="y2k.html">Y2K風</a></li>
+        <li><a href="korea.html">韓系風</a></li>
+        <li><a href="japan.html">日系風</a></li>
+        <li><a href="intro.html">組員介紹</a></li>
+      </ul>
+    </aside>
+
+    <main>
+        <section class="section-1">
+            古著風
+        </section>
+        <section class="section-2">
+      <div class="grid-background">
+        <div class="paper-doll">
+          <img src="./vintageclothes/初始頭.png" alt="Image 1">
+          <img src="./vintageclothes/林內衣.png" alt="Image 2">
+          <img src="./vintageclothes/林內褲.png" alt="Image 3">
+          <img src="./Y2Kclothes/腳.png" alt="Image 4">
+        </div>
+      </div>
+    </section>
+      <section class="section-4">
+        衣櫃
+
+      <section class="section-3">
+        
+      <div class="wardrobe">
+        <img src="./vintageclothes/口罩.png" alt="Wardrobe 1" data-wardrobe-index="1">
+        <img src="./vintageclothes/泡泡糖.png" alt="Wardrobe 2" data-wardrobe-index="2">
+        <img src="./vintageclothes/眼鏡.png" alt="Wardrobe 3" data-wardrobe-index="3">
+        <img src="./vintageclothes/髮夾.png" alt="Wardrobe 4" data-wardrobe-index="4">
+        <img src="./vintageclothes/藍色襯衫.png" alt="Wardrobe 5" data-wardrobe-index="5">
+        <img src="./vintageclothes/櫻桃上衣.png" alt="Wardrobe 6" data-wardrobe-index="6">
+        <img src="./vintageclothes/polo上衣.png" alt="Wardrobe 7" data-wardrobe-index="7">
+        <img src="./vintageclothes/短褲.png" alt="Wardrobe 8" data-wardrobe-index="8">
+        <img src="./vintageclothes/藍褲子.png" alt="Wardrobe 9" data-wardrobe-index="9">
+        <img src="./vintageclothes/黑褲子.png" alt="Wardrobe 10" data-wardrobe-index="10">
+        <img src="./vintageclothes/小白鞋.png" alt="Wardrobe 11" data-wardrobe-index="11">
+        <img src="./vintageclothes/瑪莉珍.png" alt="Wardrobe 12" data-wardrobe-index="12">
+        <img src="./vintageclothes/托鞋.png" alt="Wardrobe 13" data-wardrobe-index="13">
+      </div>
+    </section>
+    <div class="reset">
+    <ul><a href="vintage.html">點此重置</a></ul>
+  </div>
+  </section>
+<div class="intro-box">
+  <div class="intro-image">
+    <img src="vintagestyle.jpeg" alt="介绍图片">
+  </div>
+  <div class="intro-content">
+    <h2>古著風</h2>
+    <p>風格特色：</p>
+    <p>具有獨特性、歷久不衰、不易被流行所淹沒</p>
+    <p>流行元素：</p>
+    <p>復古印花、懷舊色彩、牛仔褲、絲巾、寬邊帽</p>
+    <p>流行背景：</p>
+    <p>1.隨著社會的迅速發展和科技的進步，許多人開始對過去的時代產生懷舊情懷。穿著古著服飾可以帶來一種回憶和重溫過去的感覺。</p>
+    <p>2.古著服飾提供了與主流時尚風格不同的選擇。穿著古著服飾能夠展示個人獨特的風格和品味，使人們在時尚潮流中脫穎而出。</p>
+    <p>3.環保意識興起。古著服飾的再利用和回收有助於減少對新衣服生產的需求，減少浪費和資源消耗。</p>
+    </p>
+  </div>
+</div>
+    </main>
+    
+  </div>
+  
+  <footer>
+    <h4>IG： @hun_gui__</h4>
+    <h4>G-mail：hungui406@gmail.com</h4> 
+     
+  </footer>
+</body>
+</html>

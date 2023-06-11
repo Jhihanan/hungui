@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hún櫃 </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo1.png"  type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+  
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* 允許內容換行 */
+      overflow: hidden;
+    }
+    
+    aside {
+      flex: 0 0 20%; /* 空間比例 0:不會伸縮, 0:不會壓縮, 20%:佔據容器的20%寬度 */
+      background-color: rgb(251, 199, 199);
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    a:link{
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:visited {
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:hover {
+      text-decoration:none;
+      color:white;
+    }
+    a:active {
+      text-decoration:none;
+      color:#fafafa;
+    }
+    
+    aside ul {
+      
+      list-style-type: none;
+      padding: 0;
+      
+    }
+    
+    aside ul li {
+      margin-bottom: 60px;
+      
+    }
+    
+    main {
+      flex: 0 0 75%; /* 佔據容器的60%寬度 */
+      padding: 0px;
+      background-color: #ffffff;
+      position: relative;
+      height: 1650px;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; */
+    }
+    
+    
+    
+    footer {
+      background-color: #005f41;
+      color: #fff;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      
+      text-align: center;
+      
+    }
+
+    .section{
+      margin: 20px;
+      background-color: #bbffe1;
+
+      flex: 0 0 60%; /* 佔據容器的60%寬度 */
+      padding: 20px;
+     
+
+
+    }
+    .section-1{
+        margin-top: 10px;
+        
+        background-color: #034b20;
+        color: #0a863b;
+        height: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 100px;
+        text-align: center;
+    }
+    .section-2{
+     margin-top: 150px;
+      background-color: #ffeded;
+      color: #ff1379;
+      height: 320px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      padding: 10px;
+      margin-left: 10px;
+    }
+
+    .section-3{
+      margin-top: 25px;
+      background-color: #d5fcff;
+      color: #00b7c4;
+      height: 320px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      padding: 10px;
+      margin-left: 10px;
+
+    }
+
+    .section-4{
+      margin-top: 25px;
+      background-color: #fffabb;
+      color: #cbbe0f;
+      height: 320px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      padding: 10px;
+      margin-left: 10px;
+      
+    }
+
+    .section-5{
+      margin-top: 25px;
+      background-color: #d6ffd8;
+      color: #00ca0a;
+      height: 330px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      padding: 10px;
+      margin-left: 10px;
+      
+    }
+    .image {
+      float: left;
+      width: 50%;
+    }
+    
+    .text1 {
+      float: right;
+      width: 50%;
+      color: #c10040;
+    }
+    .text2 {
+      float: right;
+      width: 50%;
+      color: #005b8d;
+    }
+    .text3 {
+      float: right;
+      width: 50%;
+      color: #786e00;
+    }
+    .text4 {
+      float: right;
+      width: 50%;
+      color: #005a03;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a {
+      text-decoration:none;
+    }
+
+  </style>
+ 
+
+
+
+</script>
+
+</head>
+<body>
+
+
+  <div class="container">
+    <aside>
+      <img src="LOGO.png" width="95%">
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="vintage.html">古著風</a></li>
+        <li><a href="y2k.html">Y2K風</a></li>
+        <li><a href="korea.html">韓系風</a></li>
+        <li><a href="japan.html">日系風</a></li>
+        <li><a href="intro.html">組員介紹</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="section-1">
+        組員介紹
+    </section>
+      <section class="section-2">
+        <h1>1111846 楊昀庭</h1>
+        <div class="image">
+            <img src="intropicture\1111846.jpg" width="30%">
+        </div>
+        
+        <div class="text1">
+            <li>工作分配：</li>
+            網站架設、網站程式碼編寫
+            <li>新竹人</li>
+            <li>資傳1A</li>
+            <li>成功升級為資管系大二</li>
+            
+            #ENFP #通勤族 #雙魚座 #鷹眼
+            
+        </div>
+            
+        
+      </section>
+      <section class="section-3">
+        <h1>1111850 劉妍敏</h1>
+        <div class="image">
+        <img src="intropicture\1111850.jpg" width="30%">
+        </div>
+        <div class="text2">
+            <li>工作分配：</li>
+            紙娃娃繪製
+            <li>新竹人</li>
+            <li>資傳1A</li>
+            <li>成功升級為資管系大二</li>
+            
+            #ISTP #天蠍座 #可愛女人 #海綿寶寶 
+        </div>
+      </section>
+      <section class="section-4">
+        <h1>1111853 林芷安</h1>
+        <div class="image">
+        <img src="intropicture\1111853.jpg" width="30%">
+        </div>
+        <div class="text3">
+            <li>工作分配：</li>
+            網站架設、程式碼編寫
+            <li>台中人</li>
+            <li>資傳1A</li>
+            <li>成功升級為資傳系大二</li>
+            
+            
+            #ENFP #天蠍座 #熱舞過動人 #睡王
+        </div>
+      </section>
+      <section class="section-5">
+        <h1>1111857 黃寧鈞</h1>
+        <div class="image">
+        <img src="intropicture\1111857-2.jpg" width="30%">
+        </div>
+        <div class="text4">
+            <li>工作分配：</li>
+            網站LOGO設計、紙娃娃繪製
+            <li>高雄人</li>
+            <li>資傳1A</li>
+            <li>成功升級為資傳系大二</li>
+            
+            
+            #ENFP #獅子座 #Bonnie #微古力
+        </div>
+      </section>
+      
+    
+
+      
+    </main>
+    
+  </div>
+  
+  <footer>
+    <h4>IG： @hun_gui__</h4>
+    <h4>G-mail：hungui406@gmail.com</h4> 
+     
+  </footer>
+</body>
+</html>

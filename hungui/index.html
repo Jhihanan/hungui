@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hún櫃 </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo1.png"  type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+  
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* 允許內容換行 */
+    }
+    
+    aside {
+      flex: 0 0 20%; /* 空間比例 0:不會伸縮, 0:不會壓縮, 20%:佔據容器的20%寬度 */
+      background-color: rgb(251, 199, 199);
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    a:link{
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:visited {
+      text-decoration:none;
+      color:rgb(249, 125, 164);
+    }
+    a:hover {
+      text-decoration:none;
+      color:white;
+    }
+    a:active {
+      text-decoration:none;
+      color:#fafafa;
+    }
+    
+    aside ul {
+      
+      list-style-type: none;
+      padding: 0;
+      
+    }
+    
+    aside ul li {
+      margin-bottom: 60px;
+      
+    }
+    
+    main {
+      flex: 0 0 75%; /* 佔據容器的60%寬度 */
+      padding: 0px;
+      background-color: #ffffff;
+      position: relative;
+      height: 1050px;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; */
+    }
+    
+    
+    
+    footer {
+      background-color: #005f41;
+      color: #fff;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      
+      text-align: center;
+      
+    }
+
+    .section{
+      margin: 20px;
+      background-color: #bbffe1;
+
+      flex: 0 0 60%; /* 佔據容器的60%寬度 */
+      padding: 20px;
+     
+    
+      
+
+
+    }
+
+    .section-2{
+      margin-top: 0px;
+      background-color: #ffeded;
+      color: #ff7171;
+      height: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 50px;
+      text-align: center;
+
+    }
+
+    .section-3{
+      margin-top: 82px;
+      background-color: #ffeded;
+      color: #039871;
+      height: 130px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+
+    }
+
+    .section-4{
+      margin-top: 0px;
+      background-color: #ee6767;
+      color: #ffffff;
+      height: 118px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 60px;
+      text-align: center;
+      
+
+    }
+
+    a {
+      text-decoration:none;
+    }
+
+  </style>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var wardrobeImages = document.querySelectorAll('.wardrobe img');
+      var mainImage = document.querySelector('.paper-doll img');
+
+      wardrobeImages.forEach(function(image) {
+        image.addEventListener('click', function() {
+          mainImage.src = image.src;
+        });
+      });
+    });
+
+    
+  </script> -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var wardrobeImages = document.querySelectorAll('.wardrobe img');
+    var image1 = document.querySelector('.paper-doll img:nth-child(1)');
+    var image2 = document.querySelector('.paper-doll img:nth-child(2)');
+    var image3 = document.querySelector('.paper-doll img:nth-child(3)');
+    var image4 = document.querySelector('.paper-doll img:nth-child(4)');
+
+    wardrobeImages.forEach(function(image) {
+      image.addEventListener('click', function() {
+        var wardrobeIndex = image.getAttribute('data-wardrobe-index'); // 获取衣橱图像的索引值
+        var wardrobeSrc = image.getAttribute('src'); // 获取衣橱图像的src属性
+
+        // 根据索引值更改相应的image元素的src属性
+        if (wardrobeIndex === '1') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '2') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '3') {
+          image1.src = wardrobeSrc;
+        } else if (wardrobeIndex === '4') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '5') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '6') {
+          image2.src = wardrobeSrc;
+        } else if (wardrobeIndex === '7') {
+          image3.src = wardrobeSrc;
+        } else if (wardrobeIndex === '8') {
+          image4.src = wardrobeSrc;
+        }
+      });
+    });
+  });
+
+
+</script>
+
+</head>
+<body>
+
+
+  <div class="container">
+    <aside>
+      <img src="LOGO.png" width="100%" >
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="vintage.html">古著風</a></li>
+        <li><a href="y2k.html">Y2K風</a></li>
+        <li><a href="korea.html">韓系風</a></li>
+        <li><a href="japan.html">日系風</a></li>
+        <li><a href="intro.html">組員介紹</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <img src="toppic.PNG" width="95%">
+      <section class="section-2">
+        <h1>ABOUT US</h1>
+      </section>
+      <section class="section-3">
+        <h3>我們是一群喜愛穿搭的女大學生，但有時候會選擇障礙，不知道要怎麼搭配，所以我們決定製作這個可以讓使用者依照自己的穿衣風格自由搭配的紙娃娃系統，如果妳也跟我們一樣喜歡穿搭，歡迎體驗我們網站中的紙娃娃換裝功能，可愛又饒富趣味。</h3>
+      </section>
+      <section class="section-4">
+        我們期待您的造訪！
+      </section>
+      
+      
+     
+
+      
+    </main>
+    
+  </div>
+  
+  <footer>
+    <h4>IG： @hun_gui__</h4>
+    <h4>G-mail：hungui406@gmail.com</h4> 
+     
+  </footer>
+</body>
+</html>
